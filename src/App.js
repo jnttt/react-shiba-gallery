@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import Nav from "./components/Nav"
+import { useState } from 'react';
+
 
 function App() {
+  const [imgs, setImgs] = useState(null);
+  const url = "http://shibe.online/api/shibes?count=100"
+  try {
+    const response = await fetch(url)
+    const data = await response.json()
+    setImgs(data)
+  } catch (e) {
+    console.error(e)
+  }
+}
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Nav/>
+  <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+      </Routes>
     </div>
   );
 }
