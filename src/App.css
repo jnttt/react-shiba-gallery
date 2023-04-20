@@ -8,3 +8,31 @@
   display: inline-block;
   margin: 20px;
 }
+
+.michi{
+  width: 330px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.aboutP{
+  display: inline-block;
+  width: 500px;
+  margin: 10px;
+  vertical-align: top;
+}
+.container{
+  display: inline-block;
+}
+.images{
+  width:200px;
+  height: 200px;
+  margin:5px;
+  display: inline-block;
+}
+  .imgsDiv{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+  }
+
