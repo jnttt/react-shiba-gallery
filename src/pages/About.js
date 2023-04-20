@@ -13,6 +13,7 @@ const About = () => {
         Inu. His name was Michi which means right path. He passed away suddenly this
         year. He was only 6 years old. RIP Michi. We love you.{" "}
       </p>
+      
       </div>
     </div>
   );
