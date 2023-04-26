@@ -6,5 +6,6 @@ Link to live site: https://shiba-gallery.netlify.app/
 Link to github: https://github.com/jnttt/react-shiba-gallery
 
 Used Visual Studio Code
+HTML, CSS, ReactJS
 
-Stretch goals I have for this project are to add a functionality where clicking an image enlarges it and you can click through the gallery one by one. 
+Stretch goals I have for this project are to add a functionality where clicking an image enlarges it and you can click through the gallery one by one. Maybe add a carousel.

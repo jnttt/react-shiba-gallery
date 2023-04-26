@@ -3,7 +3,7 @@ import { useState, useEffect} from 'react';
 
 export default function Gallery() {
    const [imgs, setImgs] = useState([]);
-  const url = "http://shibe.online/api/shibes?count=100"
+  const url = "https://shibe.online/api/shibes?count=100"
 
   const getImgs = async () => {
     try {
